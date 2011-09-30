@@ -72,37 +72,6 @@ namespace ReadOutput
             pList.Add(f1);
 
             RunProcesses(pList);
-
-            /*            Process p = new Process();
-                        p.StartInfo.EnvironmentVariables.Add("REPO", @"C:\Users\niqbal\.m2\repository");
-
-                        p.StartInfo.FileName = "C:/Official/CSharp/PrintHellows/PrintHellows/bin/Release/PrintHellows";
-                        p.StartInfo.UseShellExecute = false;
-                        p.StartInfo.RedirectStandardOutput = true;
-            
-            
-                        p.OutputDataReceived += new DataReceivedEventHandler(printData);
-
-                        p.Start();
-                        p.BeginOutputReadLine();
-
-                        while (!p.StandardOutput.EndOfStream)
-                        {
-                            //p.StandardOutput.Read();
-                            string output = p.StandardOutput.ReadLine();
-                            if (output == null || output.Equals(String.Empty))
-                            {
-                                break;
-                            }
-                            Console.WriteLine(output);
-                        }
-
-
-                        foreach(Process p in processList) {
-                            p.WaitForExit();
-                        }
-                        */
-
             Console.ReadLine();
 
             foreach (int pid in colors.Keys)
